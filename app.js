@@ -13,3 +13,10 @@ const student = {
     }
 }
 console.log(student.car.menufa)
+
+// for of loop
+
+const numbers = [45,11,22,33,5,85,44]
+for(const number of numbers){
+    console.log(number)
+}

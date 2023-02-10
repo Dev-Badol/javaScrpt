@@ -37,12 +37,12 @@ const products = [
 function matchedProducts (product , search){
     const matched = []
     for(const product of products){
-       if(product.name.includes("redmi")){
+       if(product.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())){
         matched.push(product)
        }
     }
     return matched
 }
 
-const result = matchedProducts(products,"redmi")
+const result = matchedProducts(products,"Itel")
 console.log(result)
